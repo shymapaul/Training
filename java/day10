@@ -1,0 +1,17 @@
+OOP Feature
+...............
+Encapsulation:wrapping/binding of data and methods together
+eg:class
+
+Abstraction
+.....
+hiding the implementaion part and showing only relevant information
+eg:UI
+
+Polymorphism
+many forms
+static/compile-time polymorphism
+   method overloading:(same methodname but diff set of arguments )
+dynamic/run time polymorphism
+
+Inheritance

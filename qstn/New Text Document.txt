@@ -1,0 +1,374 @@
+
+
+        
+
+
+
+
+
+
+import { playersData } from "./PlayersData";
+
+ 
+
+const allPlayers = playersData;
+
+ 
+
+ 
+
+export const getPlayers = () => {
+
+return allplayers;
+
+};
+
+ 
+
+export const generateId = () => {
+return allplayers.length+1;
+
+};
+
+ 
+
+/*
+
+    Returns the player for a given player id
+
+  */
+
+export const getPlayer = (id) => {
+return allplayers.find(p=>p.id===id);
+
+   };
+
+ 
+
+/*
+
+    Adds the player to player list
+
+*/
+
+export const addPlayer = (player) => {
+allplayers.push(player);
+
+};
+
+ 
+
+/*
+
+    Updates the player given the index and new changed values
+
+*/
+
+export const updatePlayer = (index, newPlayer) => {
+allplayers[index]=nwplayer;
+
+    
+};
+
+ 
+
+/*
+
+    Deletes a player from player list
+
+*/
+
+export const deletePlayer = (index) => {
+
+allplayers.splice(index,1);
+};
+
+ 
+
+export const getIndexOfPlayer = (id) => {
+
+   return allplayers.findIndex(p=>p.id===id);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import toast from 'react-hot-toast';
+
+ 
+
+const alert = (msg) => {
+
+  toast.error(msg, {position: 'top-right'})
+
+}
+
+ 
+
+ 
+
+let team = {
+
+  title: "Mumbai Indians",
+
+  players: [],
+
+};
+
+ 
+
+export const getTeam = () => {
+
+  return team;
+
+};
+
+ 
+
+export const setTeam = (tm) => {
+
+  team = tm;
+
+};
+
+ 
+
+/*
+
+    Should edit a player of given id to nwPlayer
+
+  */
+
+export const editTeamPlayer = (id, nwPlayer) => {
+const edit=team.players.findindex(p=>p.id===id);
+if(edit!==-1){
+team.players[edit]=nwplayer;
+}
+
+};
+
+/*
+
+    Should add a player to team, if the player
+
+    already exist alert "This Player already exist in your team !!"
+
+  */
+
+export const addTeamPlayer = (player) => {
+const add=team.players.find(p=>p.id===palyers.id);
+if(add!=null){
+alert("This Player already exist in your team !!");
+}
+team.players.push(player);
+};
+
+ 
+
+/*
+
+    Should delete a player from team
+
+  */
+
+export const deleteTeamPlayer = (id) => {
+const del=team.players.findindex(p=>p.id===id)
+if(del!==-1){
+team.players,splice(index,1);
+}
+
+};
+
+ 
+
+/*
+
+    Returns error messages if a team does not have exactly 2 batsmen
+
+    2 bowlers and 1 wicket-keeper
+
+  */
+
+export const getStatus = () => {
+
+const batsman=team.players.filter(p=>p.role==="Batsman").length;
+const bowler=team.players.filter(p=>p.role==="Bowler").length;
+const wicket=team.players.filter(p=>p.role==="wicket keeper").length;
+let status=[];
+if(batsman<2)
+status.push();
+if(bowler<2)
+status.push();
+if(wicket<1)
+status.push();
+return status;
+
+};
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import axios from "axios";
+
+ 
+
+export const getSalesData = async () => {
+
+  let { data } = await axios.get(`/sales.json`);
+
+  return data;
+
+};
+
+ 
+
+export const calculateTotalSales = (sales) => {
+const cash=sales.reduce((sum,sale)=>sum+sale.saleTotal,0);
+return cash;
+};
+
+ 
+
+export const calculateTotalCashSale = (sales) => {
+const nocredit=sales.filter(sale=>!sale.creditCard).reduce((sum,sale)=>sum+sale.saleTotal,0);
+return nocredit;
+
+};
+
+ 
+
+export const calculateTotalCreditSale = (sales) => {
+const credit=sales.filter(sale=>sale.creditcard).reduce((sum,sale)=>sum+sale.saleTotal,0);
+return credit;
+
+};
+
+ 
+
+export const calculateBuyerWithMostSale = (sales) => {
+let high=0;
+let buyer="";
+sales.forEach(sale=>{
+if(sale.saleTotal>high)
+high=sale.saleTotal;
+buyer=sale.buyerName;
+}
+const data={
+"saleTotal":high,
+"buyerName":buyerName;
+}
+return data;
+};
+
+ 
+
+
+
+
+
+
+
+
+mport React from "react";
+
+ 
+
+import "./Dashboard.css";
+
+import {calculateTotalSales,calculateTotalCashSale, calculateTotalCreditSale,calculateBuyerWithMostSale} from "./Reports";
+
+ 
+
+function Dashboard() {
+
+  return (
+
+    <div className="dashboard">
+
+      <div className="card">
+
+        <h2>Total Sales</h2>
+
+        <p>{calculateTotalSales}</p>
+
+      </div>
+
+      <div className="card">
+
+        <h2>Total Cash Sales</h2>
+
+        <p>{calculateTotalCashSale}</p>
+
+      </div>
+
+      <div className="card">
+
+        <h2>Total Credit Sales</h2>
+
+        <p>{calculateTotalCreditSale}</p>
+
+      </div>
+
+      <div className="card">
+
+        <h2>Buyer with Most Sales</h2>
+
+        <p>{calculateBuyerWithMostSale.saleTotal}</p>
+
+        <p>{calculateBuyerWithMostSale.buyerName}</p>
+
+      </div>
+
+    </div>
+
+  );
+
+}
+
+ 
+
+export default Dashboard;
+
+ 
+
+

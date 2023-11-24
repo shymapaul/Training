@@ -1,0 +1,63 @@
+enum
+......
+it's special class-group of constant
+
+eg:enum Days
+{
+SUNDAY;
+MONDAY,...
+FRIDAY
+}
+day=DAY.SUNDAY--->CORRECT
+day=DAY.FUNDAY---->NOT WORK
+comstant must be in uppercase
+
+
+
+wrapper class
+.....
+Integer.parseInt("15");
+then it return 15
+parseInt is a static method we don't need to create any object.
+
+
+Inheritance
+......
+inheritance the properties of one class to another class. we can not inherit private.
+Parent class called -super class
+child class-subclass-derived calss
+extends-extends the properties and methods of that class to this class
+something is protect-child class can access.
+when inside the same  package all class can access.
+when outside the package only child class can access
+
+
+fuelengine mycar=(fuelengine) new car;--->only valid if use child class to create object.(type casting)
+we can accees the properities which are declared as default,public,protect(inside same package)
+............................................
+car mycar=new ev();
+we can't call methods only in ev not in car .
+but ev mycar=new ev(); ...now it's working.
+
+
+static ploymorphism
+.............
+overloading:both methods are inside the same class and same method name and different parameter
+runtime polymorphism
+.......
+method overriding
+...............
+subclass method override the super class called overriding.
+same method name,same parameter,same data type
+one class should be  in the parent class and one in the base class
+super()
+...........
+super refers to object of parent class
+super and this keyword do not write inside static method.
+
+
+
+
+
+super class constructor always created
+super can be method or object of parent class. super()--->it is a method,super-->object and it should be first line of the method.

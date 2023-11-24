@@ -1,0 +1,29 @@
+map
+.....
+hash map
+......
+no order follow
+linked hash map
+..
+have order
+Tree map
+......
+ always have order
+
+keys are unique values are repetable--->map
+set have no key value pair (difference between set and map)
+
+
+Software Testing
+....................
+unit testing--testing of individual unit
+Integration testing
+end to end testing--testing whole applications
+
+
+JUit-java Library for writing unit tests
+Lifecycle hooks
+beforeAll
+beforeEach
+afterAll
+afterEach

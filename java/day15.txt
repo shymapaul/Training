@@ -1,0 +1,31 @@
+classes have getter,setter,to string,hashcode,equals-->called pojo
+equals method check the equlity
+hash code..>if 2 are equal then check hash code is also equal
+
+set..>have no order but always unique
+
+Hashset is unique and doesn't follow any order.
+In treeset all the elements will be sorted
+LinkedHashSet follows the order of insertion 
+
+
+Set<Integer>nums=new TreeSet<>();-->sorted way
+Set<Integer>nums=new HashSet<>();--->based on hash code ,we can't predict the order
+Set<Integer>nums=new LinkedHashSet<>();-->no duplicate,printed the element in the order which we are enterd
+
+
+
+How to sort a collection.
+................
+Collection.sort(List)
+
+
+
+Layerd Architecture
+............
+we divided different classes an interface as per their purpose.
+-ui layer
+-business layer/service layer
+-repository layer/DAO layer/persistance layer
+-model/entity layer
+

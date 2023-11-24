@@ -1,0 +1,31 @@
+object oriented design
+............
+UML-Unified Modelling Language
+Abstraction,encpasulation,decomposition,generalization-->these are related to class
+class StudentGrade{
+
+ 
+
+private    double grade;
+public void setGrade(double grade){
+    if(grade<=5){
+        this.grade=grade;
+    }
+    .....
+}
+} sg.setGrade(9)
+
+Decomposition
+............
+Association
+..........
+
+*somehow the are related but they also can individually exist.
+Where both the object can exists individually
+eg:flight and passengers
+fridge and fruits
+
+Aggregation
+...........
+Composition
+.............

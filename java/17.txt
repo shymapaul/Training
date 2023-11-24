@@ -1,0 +1,20 @@
+File &I/O
+.....
+Read information from a file
+write information to a file
+
+
+Reading File
+.........
+FileInputStream-byte oriented
+FileReader-charcter oriented-2-byte-most popular
+
+
+Writing object to file
+..............
+serialization
+reading object from file
+............
+de-serialization
+tranaient-->will not be seralized
+eg:private tranaient int id;

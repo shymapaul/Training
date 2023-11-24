@@ -1,0 +1,78 @@
+instanceof()
+to check whether an object is an instance of of class or subclass or interface
+
+Car c=new EV();
+c instance of Ev->t
+c insatnce of car->t
+c instance of object.->t
+c instance of fuelengine-->f
+
+final keyword
+.........
+final int x=10;
+x=15; or x++; ...>it's not work
+the value of final variables can't change
+final variable treated as constant
+final method
+............
+we can not overridden the final methods
+final void brake(){..}
+
+final class
+......
+it can't be extended;can't be inherited.
+Abstraction
+................
+abstract class--> class,which is not complete
+can not create object of abstarct class and inheritance is mandatory
+In abstract class final method is valid but in final class abstract method is not valid
+
+
+Abstraction
+.....
+2 ways
+interface
+absract class
+
+
+a class which is not abstract called concrete class
+
+
+when one module dependent on another module called couplig.
+inteface
+.........
+
+it's just like a class but it will have only abstarct methods.
+
+
+
+Has A relationship
+.................
+eg:
+Phone{
+Sim sim;....>null pointer exception
+makeAcALL();
+}
+class Sim{
+call() 
+{
+...}
+sendSms()
+{
+....}
+null pointer exception
+if we don't create any object it takes as null pointer
+interface
+...............
+all the methods are public abstract method by default.
+*just like a class but it'll contain only abstract methods.
+*in interface by default all the methods are public and abstract.
+
+ 
+
+limitation
+------------
+*multiple inheritence of classes is achieved using interface in java
+*interface can only use if there is functionality ,no variables the prefer interface.
+
+

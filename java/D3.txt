@@ -1,0 +1,115 @@
+GIT and GITLab
+...........
+GIT????
+
+VERSION CONTROL SYSTEM
+
+GITLab?????
+
+Online source code repository(remote repo)
+..................................
+/GIT has repositories
+/we can save our changes to the repository using git commit
+/we can push the code to remote repository using git push
+/we can clone/make a copy of the remote repository on out local system using git clone
+/we can pull the changes from remote repository using git pull
+
+Alternatives of gitlab
+........
+/GitHub
+/BitBucket
+/AWS CodeCommit
+
+What is forking
+.............
+Making your own copy of a remote repository
+
+Setting up the SSH key access
+...........................
+
+profile..>preference...>SSH keys
+
+Open Terminal/CMD
+
+
+Type bash ssh-keygen -t rsa -b 2048 -C "<email>" 
+
+
+Enter file in which to save the key
+
+
+Enter passphrase
+
+
+
+keep it blank
+
+
+Enter same passphrase again
+
+
+keep it blank
+
+
+Go to the location where keys are saved
+
+Open the .pub key file using notepad
+
+Copy the content
+
+Paste it to the Key section on GitLab
+
+Add the key
+
+Also add the private key on your local machine using terminal
+
+eval $(ssh-agent -s)
+ssh-add <key-file-name>
+
+
+How to clone a repository
+..................
+
+
+
+
+
+
+
+
+commit
+.....
+git add .  ..>means,all files to commit
+add files to commit(specify what are the files to commit and must do before commit)
+git status ..> to see the status or current changes
+
+git commit
+..............
+to save changes(
+every commit should have meassage
+eg: git commit -m"my first commit"
+can not push before commit.(updating changes in to the remote)
+from remote to local--->pull
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+condition statements
+............
+if else
+switch
+conditional operator

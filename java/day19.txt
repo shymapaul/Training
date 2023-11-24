@@ -1,0 +1,16 @@
+java8
+default:default interface can have methods with body
+lambda expression:implementaion of functional interface
+functional interface:interface with single abstract methos
+streamapi:filter:filter data based on condition
+map:changes the value
+reduce:reduce the entire stream in to single value
+stream:squence of data
+
+
+filter and map called intermediate method--will return another stream
+reduce called termination method--will return an integer value.we can't do map or filter after this
+
+compare problem is solved by compartor
+in any stream we can use soretd inside comprator 
+Comparator<Employee> compareByName=(emp1,emp2)->emp1.getEmployeeName().compareTo(emp2.getEmployeeName());

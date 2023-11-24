@@ -1,0 +1,67 @@
+
+https://stackbooks-ust.stackroute.in/
+git
+https://gitlab-ust.stackroute.in/dashboard/projects
+
+
+$ eval $(ssh-agent -s)
+ssh-add ust-gitlab-key
+cd ust-b2-classroom-repo
+git pull
+
+
+git init
+git add .
+git commit -m "message"
+$ eval $(ssh-agent -s)
+ssh-add ust-gitlab-key
+git remote
+git push -u origin master
+
+
+
+
+
+$ eval $(ssh-agent -s)
+ssh-add ust-gitlab-key
+git add .
+git commit -m "message"
+git remote
+git push -u origin master
+
+
+
+
+class GfG
+{
+    public static int palinArray(int[] a, int n)
+           {
+
+               int t=0;
+               int out=0;
+               int count=0;
+                  for(int num:a){
+                      int temp=num;
+                      while(num!=0){
+                          int rem=num%10;
+                          t=(t*10)+rem;
+                          num/=10;
+                      }if(temp==t){
+                         count++; 
+                      }else{
+                          out=0;
+                          break;
+                      }
+                  }return out;
+
+           }
+}
+
+Last read
+class GfG {     public static int palin... by Vivek Kumar Padinjare Veettil(UST,IN)
+Vivek Kumar Padinjare Veettil(UST,IN)Yesterday 8:24 PM
+
+
+cd bin
+mysqld --console
+

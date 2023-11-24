@@ -1,0 +1,26 @@
+JAVA 8 Features
+......
+1.default and static methods in interface.
+2.Functional interface and lambda expression
+3.Stream API
+4. COLLECTION API improvements
+5.Date and Time APIs improvements
+
+
+Functional interface 
+..........
+An interface consisting of a single abstract method
+ lambda expression
+.................
+implementation of those functional interface
+
+we can create static and default methods in functional interface but can't create morerthan one abstract method
+
+fileter
+...find something from a give input
+like it contains if else condition
+
+
+Date and time related classes
+...............
+Local Date

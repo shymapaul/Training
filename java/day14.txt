@@ -1,0 +1,81 @@
+How to throw and exception conditionally?
+create one class and extend the exception class-->user defined exception
+if we write try block catch is must but we can written finally without catch
+
+
+Throw vs Throws
+
+Generating an exception ---throw 
+syntax
+.............
+throw new Exception-class-name(meassage)
+throw new InvalidAgeException("invalid age")
+Declaring an exception-->throws , write along with a method ,only write in checked exception
+syntax
+.........
+method-name() throws Exception-Type
+public void readAge() throws InvalidAgeException
+drawback of arrys
+...
+size is fixed(not flexible)
+
+collection Framework
+...........
+collection of classes and interface.
+provide different types of collection or data-structure and common operation like searching soring 
+
+List
+Collection items= new ArrayList();//ArrayList is a class but List is package.
+type is not matter
+number-->Integer
+also we can use wrapper class but not primitive datatype
+
+list..>allow duplication,stored in arrays
+set..>not allow duplication,no orders,stored (hash)
+queue-->first in first out
+collection
+...
+1.list
+2.set
+3.queue
+
+
+Collection Framework
+.....
+3 types
+..List-collection(index based,allows duplicate)
+  	..ArrayList
+	..LinkedList
+	..Vector
+..Queue
+FIFO
+allows duplicate
+	...priorityQueue
+	...LinkedList
+..set(collection of unique elemets)(hash based)
+ 	...hashSet
+ 	...Treeset
+
+Generic Types-
+  -Generic types defines the type of data that a collection should have 
+	-we mention generic type using <> diamond braces.
+
+
+
+we can use index only if we use list.
+eg:items.add(2,500);
+
+
+
+methods
+add(object o)
+addAll(collection c)
+clear()
+clone()
+contains(object o)
+get?(int index)
+size?()
+remove?(object o)
+isEmpty?()
+indexOf(object o)
+remove?(int index)

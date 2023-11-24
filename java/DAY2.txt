@@ -1,0 +1,47 @@
+
+1.Write an algorithm for accepting five numbers and display the sum and average of the numbers.
+.............................................................................................
+	step 1:start
+	step 2:input n1,n2,n3,n4,n5
+	step 3:sum=n1+n2+n3+n4+n5
+	step 4:avg=sum/5
+	step 5: print sum,avg
+	step 6:end
+Data Types in java
+................
+Primary types:8
+.........
+Numeric-int,short,byte,long
+Decimal-float,double
+Character-char
+boolean-boolean(true/false)
+
+secondary or user defined types or referrence type:
+.............................
+class
+object
+arrays
+string
+
+put lower value to higher datatype but not higher value to lower datatype.(int<float<double)
+eg:
+float n;
+n=10.0;--->wrong
+n=10.0f;--->/
+
+Typecasting
+...........
+eg: double n1;
+int n2;
+n1=10.5f
+n2=(int)2.3
+
+How to read input from user
+................
+using scanner
+import java.util.Scanner;--->package
+ Scanner scan=new Scanner(System.in);-->create object
+int dis_kilm=scan.nextInt();-->to read int
+float dis_kilm=scan.nextFloat();--> to read float
+Double dis_kilm=scan.nextDouble();--> to read double
+String v=scan.nextString();-->to read string

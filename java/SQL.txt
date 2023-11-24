@@ -1,0 +1,173 @@
+
+palinArray
+............
+
+class GfG
+{
+    public static int palinArray(int[] a, int n)
+           {
+               int t=0;
+               int out=0;
+               int count=0;
+               for(int num:a){
+                   int temp=num;
+                   t=0;
+                   while(num!=0){
+                       int rem=num%10;
+                       t=(t*10)+rem;
+                       num/=10;
+                   }if(temp!=t){
+                       out=0;
+                       break;
+                   }else{
+                       out=1;
+                   }
+
+               }return out;
+
+ 
+
+
+           }
+}
+
+Check for Binary
+..............
+class GfG
+{
+	boolean isBinary(String str)
+	{
+	 
+	      boolean out=false;
+	      char[]chars=str.toCharArray();
+	      for(char sa:chars){
+	          if(Character.compare(sa,'1')!=0 && Character.compare(sa,'0')!=0){
+	              out=false;
+	              break;
+	          }
+	          else{
+	              out=true;
+	          }
+	      }
+	      return out;
+	}
+}
+
+Check if two arrays are equal or not
+
+
+
+
+Count of smaller elements
+.................
+class Compute {
+    
+    public long countOfElements(long arr[], long n, long x)
+    {
+        int c=0;
+        for(int i=0;i<n;i++){
+            
+            if(arr[i]<=x){
+                c++;
+            }
+        
+        }
+        return c;
+    }
+}
+
+binary serach
+
+class Solution {
+    int binarysearch(int arr[], int n, int k) {
+        int c=0;
+        int out=0;
+        int v=arr.length-1;
+        int l=0; int m=arr.length-1;
+        for(int i=0;i<n;i++){
+            
+            int mid=(l+m)/2;
+            // if(k==arr.length-1){
+            // out=-1;
+            //     break;
+            // }
+           
+            
+            if(arr[mid]==k){
+                return mid;
+                
+            }
+           else if(arr[mid]<k){
+               l=mid+1;
+              
+              
+                
+            }else
+            {
+                m=mid-1;
+               
+                
+            }
+        }
+        return -1;
+    }
+}
+Swap two numbers
+............
+class Solution{
+    static List<Integer> get(int a,int b)
+    {
+     List<Integer>list=new ArrayList<>();
+     list.add(b);
+     list.add(a);
+     return list;
+    }
+}
+
+Replace all 0's with 5
+..............
+class Solution{
+	public static int convertFive(int n){
+	    int mul=1;
+	    int t=0;
+   while(n!=0){
+       int rem=n%10;
+     
+       if(rem==0){
+           t=t+(5*mul);
+       }
+      else
+      {
+          t=t+(rem*mul);
+      }
+        
+       
+   
+   mul*=10;
+   n=n/10;
+    }return t;
+}}
+Armstrong Numbers
+................
+
+class Solution {
+    static String armstrongNumber(int n){
+        String out=" ";
+        int t=0;
+        int temp=n;
+        
+       while(n!=0)
+       {
+            
+           int rem=n%10;
+           t=t+(rem*rem*rem);
+           n=n/10;}
+       if(temp==t){
+           out="Yes";
+       }
+       else{
+           out="No";
+       }
+       return out;
+    }
+}

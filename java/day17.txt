@@ -1,0 +1,106 @@
+Database
+..............
+organized collection of data
+easy to fetch ,update,insert,delete data
+
+DBMS
+....
+manage the databases
+2 types:
+	Structued Query Language SQL(RDBMS)---it's a language
+		MySQL
+		Oracle
+		MSSQL Server
+		Postgres
+		
+	NoSQL
+		MongoDB
+		AWS Dynamo DB
+
+entity
+.....
+it's like an object.it have some attribute
+eg:student
+student have name,id,age,etc...
+
+ER Model(entity relationship diagram)
+entity is an object of interest
+Attribute-->defines various properties of an entity
+realtionship-->defines the realtionship between different entities
+
+eg:
+Trainee..>Address,name,phone(rectangle)(n)
+Trainer..>technology,Address,name,phone(rectangle)(1)
+
+realtionship--->teaches(diamond)--->this how these 2 are realted
+
+every entity rep. a tble in db
+
+Types of SQL Language
+...............
+DDL-Data  Definition Language
+ -CREATE-creating new table or database
+ -ALTER-changing the table structure
+ -DROP-delete the table
+ -TRUNCATE-clear all the data
+DML-data manipulation langugae
+ insert
+ update
+ delete
+
+DQL-DATA QUERY LANGUAGE
+
+Grouping function
+.......
+sum
+avg
+count
+max
+min
+ when using group by ,we can select only that field defined with group by statement
+having used after group by
+where used before group by
+
+date functions
+..............
+
+
+
+wildcards(like0
+...........
+joins
+................
+
+
+
+keys in sql
+........
+primary key..>unique,not null
+Unique key..>unique,can be null
+Alternative key..> unique keys other than primary key
+Foreign key...>
+
+
+join
+...
+inner join
+select all the common data from two tables
+outer join
+left join
+right join
+
+
+DCL
+	GRANT
+	REVOKE
+TCL
+	commit
+we can't rollback when it's comitted.
+set autocommit=false;
+	rollback
+	savepoint
+savepoint p1;
+we can rollback 
+delete from dep where dept=10;
+rollback to p1;
+//then all department is present

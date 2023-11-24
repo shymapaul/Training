@@ -1,0 +1,28 @@
+Exception Handling
+.............
+1.Syntax error or compile time error
+2.Runtime error...>Exception..>error occured during run time. when exception occur program will stop
+3.Logical error
+exception handling
+..............
+how to recover from an exception or deal that exception called exception handling.
+
+try--->write the code that can lead to some exception.
+catch-->write what to be done if the exception is occured.
+finally-->a code block to be executed irrespective of whether or not the exception occured.
+
+Exception 2 types:
+...................
+Checked Exception---compile time Exception----certain scenario writing exception handling is compulsory,you must have to write try catch.
+which are checked at compile time.
+Unchecked Exception....Runtime Exception
+
+
+ArrayIndexOutOfBoundsException
+
+All checked exception extends the exception class directly.eg:FileNotFoundException,SQLException,IOException,ClassNotFoundException
+All unchecked exception extends the exception RuntimeException class.eg:ArithmeticException,ArrayIndexOutOfBoundsException,NullPointerException,NumberFormatException,InputMismatchException
+
+how to catch 
+one try block have multiple catch block
+when you are using checked exception then write throws exception in the function
